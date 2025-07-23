@@ -60,6 +60,7 @@
       max-width: 350px;
       border-radius: 15px;
       box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      animation: flutuar 6s ease-in-out infinite;
     }
     .galeria h2 {
       font-size: 2rem;
@@ -78,9 +79,11 @@
       object-fit: cover;
       border-radius: 10px;
       transition: transform 0.3s;
+      animation: flutuar 6s ease-in-out infinite;
     }
     .grid img:hover {
       transform: scale(1.03);
+      animation: flutuar 3s ease-in-out infinite, tremer 0.5s ease;
     }
     footer {
       text-align: center;
@@ -88,6 +91,27 @@
       background-color: #222;
       color: white;
       font-size: 0.9rem;
+    }
+    
+    /* Animações */
+    @keyframes flutuar {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+    
+    @keyframes tremer {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(1deg); }
+      50% { transform: rotate(-1deg); }
+      75% { transform: rotate(1deg); }
+      100% { transform: rotate(0deg); }
+    }
+    
+    /* Efeito ao passar o mouse na foto de perfil */
+    .foto-perfil:hover img {
+      animation: flutuar 3s ease-in-out infinite, tremer 0.5s ease;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.3);
     }
   </style>
 </head>
@@ -110,7 +134,7 @@
     </div>
     <div class="foto-perfil">
       <!-- Substitua pelo caminho da foto real -->
-      <img src="imagens/foto-perfil.jpg" alt="[Nome do Cliente] - Confeiteira profissional">
+      <img src="imagens/foto-perfil.jpg" alt="Cláudia Regina - Confeiteira profissional">
     </div>
   </section>
 
