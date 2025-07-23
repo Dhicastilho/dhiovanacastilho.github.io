@@ -29,32 +29,58 @@
       max-width: 1000px;
       margin: auto;
     }
-    .quem-sou {
-      margin-bottom: 2rem;
+    .sobre-mim {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 3rem;
+      margin-bottom: 3rem;
     }
-    .quem-sou h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
+    .sobre-conteudo {
+      flex: 1;
+      min-width: 300px;
     }
-    .quem-sou p {
+    .sobre-mim h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: #89253e;
+    }
+    .sobre-mim p {
       font-size: 1.1rem;
       line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+    .foto-perfil {
+      flex: 1;
+      min-width: 300px;
+      text-align: center;
+    }
+    .foto-perfil img {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     }
     .galeria h2 {
       font-size: 2rem;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
       text-align: center;
+      color: #89253e;
     }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
+      gap: 1.5rem;
     }
     .grid img {
       width: 100%;
-      height: 200px;
+      height: 250px;
       object-fit: cover;
-      border-radius: 8px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .grid img:hover {
+      transform: scale(1.03);
     }
     footer {
       text-align: center;
@@ -68,33 +94,39 @@
 <body>
 
   <header>
-    <h1>Nome do Cliente</h1>
+    <h1>Cláudia Regina Doces</h1>
     <p>Portfólio profissional</p>
   </header>
 
-  <section class="quem-somos">
-    <h2>Quem Sou</h2>
-    <p>
-      Sou uma mulher apaixonada pela confeitaria, nascida e criada no Rio Grande do Sul. Atualmente, moro em Goiânia (GO) e estou em constante aperfeiçoamento, cursando o renomado Curso IGGA.
-      Dedico-me a entregar produtos de alta qualidade, feitos com carinho, técnica e atenção aos detalhes. Para mim, cada doce é mais do que uma receita — é uma experiência única de sabor e afeto.
-    </p>
+  <section class="sobre-mim">
+    <div class="sobre-conteudo">
+      <h2>Minha Jornada na Confeitaria</h2>
+      <p>
+        Sou uma mulher apaixonada pela confeitaria, nascida e criada no Rio Grande do Sul. Atualmente, moro em Goiânia (GO) e estou em constante aperfeiçoamento, cursando o renomado Curso IGGA.
+      </p>
+      <p>
+        Dedico-me a entregar produtos de alta qualidade, feitos com carinho, técnica e atenção aos detalhes. Para mim, cada doce é mais do que uma receita — é uma experiência única de sabor e afeto.
+      </p>
+    </div>
+    <div class="foto-perfil">
+      <!-- Substitua pelo caminho da foto real -->
+      <img src="imagens/foto-perfil.jpg" alt="[Nome do Cliente] - Confeiteira profissional">
+    </div>
   </section>
 
   <section class="galeria">
-    <h2>Galeria de Fotos</h2>
+    <h2>Minhas Criações</h2>
     <div class="grid">
-      <img src="https://via.placeholder.com/300x200?text=Foto+1" alt="Foto 1">
-      <img src="https://via.placeholder.com/300x200?text=Foto+2" alt="Foto 2">
-      <img src="https://via.placeholder.com/300x200?text=Foto+3" alt="Foto 3">
-      <img src="https://via.placeholder.com/300x200?text=Foto+4" alt="Foto 4">
+      <img src="imagens/bolo1.jpg" alt="Bolo artesanal decorado">
+      <img src="imagens/doces2.jpg" alt="Doces finos personalizados">
+      <img src="imagens/sobremesa3.jpg" alt="Sobremesa gourmet">
+      <img src="imagens/evento4.jpg" alt="Decoração para eventos">
     </div>
   </section>
 
   <footer>
-    © 2025 - Todos os direitos reservados | contato@seudominio.com
+    © 2025 - Todos os direitos reservados | contato@dhiovanacastilho.com
   </footer>
 
 </body>
 </html>
-
-
