@@ -3,54 +3,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Meu Portfólio</title>
+  <title>Portfólio</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
-      padding: 2rem;
-      background-color: #f8f9fa;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
     }
     header {
-      background: #2c3e50;
+      background: linear-gradient(135deg, #3a6186, #89253e);
       color: white;
-      padding: 2rem;
+      padding: 4rem 2rem;
       text-align: center;
     }
+    header h1 {
+      font-size: 3rem;
+    }
     section {
-      margin-top: 2rem;
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
     }
-    .card {
-      background: white;
-      padding: 1rem;
+    .quem-somos {
+      margin-bottom: 2rem;
+    }
+    .quem-somos h2 {
+      font-size: 2rem;
       margin-bottom: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
     }
-    a {
-      color: #3498db;
+    .quem-somos p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .galeria h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .grid img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #222;
+      color: white;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Olá, eu sou [Seu Nome]</h1>
-    <p>Desenvolvedor | Analista de Dados | Designer</p>
+    <h1>Nome do Cliente</h1>
+    <p>Portfólio profissional</p>
   </header>
 
-  <section>
-    <h2>Projetos em Destaque</h2>
-
-    <div class="card">
-      <h3>Projeto 1</h3>
-      <p>Descrição breve do projeto. <a href="#">Ver mais</a></p>
-    </div>
-
-    <div class="card">
-      <h3>Projeto 2</h3>
-      <p>Descrição breve do projeto. <a href="#">Ver mais</a></p>
-    </div>
-
+  <section class="quem-somos">
+    <h2>Quem Somos</h2>
+    <p>
+      Somos uma equipe apaixonada por criatividade, inovação e resultados. Atuamos há mais de 5 anos no mercado,
+      entregando projetos de alta qualidade para clientes de diferentes setores. Nosso compromisso é transformar ideias em soluções reais e impactantes.
+    </p>
   </section>
+
+  <section class="galeria">
+    <h2>Galeria de Fotos</h2>
+    <div class="grid">
+      <img src="https://via.placeholder.com/300x200?text=Foto+1" alt="Foto 1">
+      <img src="https://via.placeholder.com/300x200?text=Foto+2" alt="Foto 2">
+      <img src="https://via.placeholder.com/300x200?text=Foto+3" alt="Foto 3">
+      <img src="https://via.placeholder.com/300x200?text=Foto+4" alt="Foto 4">
+    </div>
+  </section>
+
+  <footer>
+    © 2025 - Todos os direitos reservados | contato@seudominio.com
+  </footer>
+
 </body>
 </html>
+
+
